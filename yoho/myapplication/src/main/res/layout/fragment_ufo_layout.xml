@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:text="UFO飞碟好物"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="NFC"
+            android:textColor="#000"
+            android:id="@+id/nfc"
+            android:drawableTop="@drawable/nfc"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+        </TextView>
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_toRightOf="@+id/nfc"
+            android:layout_toLeftOf="@id/all"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/buttonsearch"
+            app:queryHint="Air Jordan 1 Mid 白色绸"
+            android:layout_centerInParent="true"
+            android:layout_height="40dp">
+        </androidx.appcompat.widget.SearchView>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:text="NFC"
+            android:id="@+id/all"
+            android:textColor="#000"
+            android:drawableTop="@drawable/all"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+        </TextView>
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ufo_tab"
+        app:tabMode="scrollable"
+        app:tabTextColor="#838282"
+        app:tabSelectedTextColor="#181818"
+        android:layout_height="50dp">
+    </com.google.android.material.tabs.TabLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/ufo_recycler"
+        android:layout_height="match_parent">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+</LinearLayout>

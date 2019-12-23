@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:background="#CCCBCB"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+        <TextView
+            android:text="A"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/brand_item_title"
+            android:textSize="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+        </TextView>
+        <View
+            android:background="#A2A2A2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_low"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="51dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="AAAAA"
+                android:id="@+id/brand_item_string"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+            </TextView>
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="HOT"
+                android:id="@+id/brand_item_hot"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:background="@drawable/drawred"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+            </TextView>
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="NEW"
+                android:id="@+id/brand_item_new"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:background="@drawable/drawgreen"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <View
+            android:background="#A2A2A2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+
+
+    </LinearLayout>
+
+</LinearLayout>

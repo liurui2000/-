@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/woman_appbarlayout"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <com.youth.banner.Banner
+            android:id="@+id/woman_banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </com.youth.banner.Banner>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:background="@drawable/linearback"
+                android:layout_width="0dp"
+                android:paddingLeft="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/woman3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ImageView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@drawable/linearback"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:background="@drawable/linearback"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:paddingTop="1dp"
+                        android:paddingBottom="1dp"
+                        android:paddingRight="1dp"
+                        android:paddingLeft="1dp"
+                        android:src="@mipmap/pintuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp"
+                        android:src="@mipmap/xianshi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=" |  新人专享"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:text="· · ·"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </RelativeLayout>
+        <ImageView
+            android:src="@mipmap/xinren"
+            android:scaleType="fitXY"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <ImageView
+            android:src="@mipmap/woman4"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+        </ImageView>
+        <ImageView
+            android:src="@mipmap/woman5"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="145dp">
+
+        </ImageView>
+        <ImageView
+            android:src="@mipmap/woman6"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        </ImageView>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=" 热门品牌"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:text="查看更多＞"
+                android:textSize="10dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </TextView>
+        </RelativeLayout>
+        <ImageView
+            android:src="@mipmap/woman7"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        </ImageView>
+        <ImageView
+            android:src="@mipmap/woman8"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+        </ImageView>
+        <ImageView
+            android:src="@mipmap/woan9"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        </ImageView>
+        <ImageView
+            android:src="@mipmap/woman10"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        </ImageView>
+        <ImageView
+            android:src="@mipmap/woman11"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        </ImageView>
+        </LinearLayout>
+
+
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/woman_tab"
+            app:tabMode="scrollable"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.jcodecraeer.xrecyclerview.XRecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/woman_recyclerview"
+                        android:layout_height="500dp">
+
+                    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+</LinearLayout>

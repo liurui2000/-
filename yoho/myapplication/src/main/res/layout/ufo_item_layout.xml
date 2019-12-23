@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/backline"
+        android:layout_width="190dp"
+        android:layout_height="300dp">
+        <TextView
+            android:text="￥599"
+            android:id="@+id/ufo_item_money"
+            android:textSize="14dp"
+            android:textColor="#000"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/ufo_item_rexiao"
+            android:src="@mipmap/rexiao"
+            android:layout_below="@id/ufo_item_money"
+            android:paddingLeft="20dp"
+            android:paddingTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:text="89人购买过"
+            android:textSize="13dp"
+            android:id="@+id/ufo_item_buy"
+            android:paddingTop="21dp"
+            android:textColor="#797979"
+            android:paddingRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:id="@+id/ufo_item_img"
+            android:layout_centerInParent="true"
+            android:layout_height="170dp">
+
+        </ImageView>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:id="@+id/ufo_item_text"
+            android:text="Asadsijgasjaoisdjofsdfjsdfsdfwefsdfsd"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

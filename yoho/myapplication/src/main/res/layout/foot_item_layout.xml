@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_marginBottom="2dp"
+    android:layout_height="155dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:id="@+id/linears"
+            android:layout_toLeftOf="@+id/reesf"
+            android:layout_width="match_parent"
+            android:layout_weight="6"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/item_pics"
+                    android:layout_height="match_parent">
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:textColor="#7C7C7C"
+                    android:id="@+id/item_titles"
+                    android:gravity="center"
+                    android:layout_height="0dp">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:text="￥298.00"
+                        android:id="@+id/item_moneys"
+                        android:textColor="#DB2D2D"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:text="￥498.00"
+                        android:id="@+id/item_moneys2"
+                        android:textColor="#7C7C7C"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+            <View
+                android:background="#AAAAAA"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/reesf"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+
+            <TextView
+                android:id="@+id/item_num"
+                android:text="＞"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+            </TextView>
+            <Button
+                android:background="@drawable/buttonsback3"
+                android:layout_alignParentBottom="true"
+                android:text="找相似"
+                android:layout_marginBottom="4dp"
+                android:textColor="#FF0000"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+
+            </Button>
+            <View
+                android:layout_alignParentBottom="true"
+                android:background="#AAAAAA"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

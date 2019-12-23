@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.ui.activity.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_framelayout"
+        android:layout_above="@id/main_gb"
+        >
+
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/relayout_car"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/main_gwc"
+            android:padding="6dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/buttonwhite"
+            android:layout_width="30dp"
+            android:src="@mipmap/gwc"
+            android:layout_height="30dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/main_gwc_num"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/drawred2"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp">
+
+        </TextView>
+    </RelativeLayout>
+    <ImageView
+        android:background="@mipmap/tabmain_radiolayout_menucontainer_background"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </ImageView>
+
+    <RadioGroup
+
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/main_gb"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RadioButton
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:textSize="10dp"
+            android:textColor="@drawable/textcolor"
+            android:checked="true"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:drawableTop="@drawable/homepage_selector"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="首页"
+            android:button="@null"
+            android:textAlignment="center"
+            android:id="@+id/main_homepage_rb"
+            >
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/main_classify_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/classiy_selector"
+            android:paddingTop="5dp"
+            android:text="分类"
+            android:textAlignment="center"
+            android:textColor="@drawable/textcolor"
+            android:textSize="10dp">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textAlignment="center"
+            android:id="@+id/main_shoes_ufo_rb"
+            >
+
+        </RadioButton>
+        <RadioButton
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:textColor="@drawable/textcolor"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="社区有礼"
+            android:drawableTop="@drawable/community_selector"
+            android:button="@null"
+            android:textAlignment="center"
+            android:id="@+id/main_community_rb"
+            >
+
+        </RadioButton>
+        <RadioButton
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:textColor="@drawable/textcolor"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="我的"
+            android:textSize="10dp"
+            android:drawableTop="@drawable/my_selector"
+            android:button="@null"
+            android:textAlignment="center"
+            android:id="@+id/main_mine_rb"
+            >
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/main_ufo_img"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/person_center_ufo_buying"
+        >
+
+    </ImageView>
+
+
+</RelativeLayout>

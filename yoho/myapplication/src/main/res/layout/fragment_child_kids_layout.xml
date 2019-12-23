@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/kids_appbarlayout"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.youth.banner.Banner
+                android:id="@+id/kid_banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+            </com.youth.banner.Banner>
+            <ImageView
+                android:src="@mipmap/kid1"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+            </ImageView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" |  新人专享"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </RelativeLayout>
+            <ImageView
+                android:src="@mipmap/xinren"
+                android:scaleType="fitXY"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+            <ImageView
+                android:src="@mipmap/kid2"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            </ImageView>
+            <ImageView
+                android:src="@mipmap/kid3"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </ImageView>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 热门品牌"
+                    android:textSize="20dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </RelativeLayout>
+            <ImageView
+                android:src="@mipmap/kid4"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </ImageView>
+            <ImageView
+                android:src="@mipmap/kid5"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/kidtop_staggview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+            <ImageView
+                android:src="@mipmap/kid6"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/kidlow_staggview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+            <ImageView
+                android:src="@mipmap/kid7"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+            </ImageView>
+            <ImageView
+                android:src="@mipmap/kid8"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/kid_tab"
+            app:tabMode="scrollable"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+                    <com.jcodecraeer.xrecyclerview.XRecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/kid_recyclerview"
+                        android:layout_height="500dp">
+
+                    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+</LinearLayout>

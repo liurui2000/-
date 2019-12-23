@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/life_appbarlayout"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.youth.banner.Banner
+                android:id="@+id/life_banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+            </com.youth.banner.Banner>
+            <ImageView
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@mipmap/life1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@mipmap/life2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@mipmap/life3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@mipmap/life4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@mipmap/life5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/lifetop_staggview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+            <ImageView
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@mipmap/life6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/lifelow_staggview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+            <ImageView
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@mipmap/life7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@mipmap/life8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@mipmap/life9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@mipmap/life10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@mipmap/life11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ImageView>
+        </LinearLayout>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/life_tab"
+            app:tabMode="scrollable"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/s"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <com.jcodecraeer.xrecyclerview.XRecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/life_recyclerview"
+                        android:layout_height="500dp">
+
+                    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>

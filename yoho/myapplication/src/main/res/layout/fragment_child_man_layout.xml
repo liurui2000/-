@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/man_appbarlayout"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <com.youth.banner.Banner
+                        android:id="@+id/man_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                    </com.youth.banner.Banner>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/man_staggview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/man_xingqiyi"
+                        android:src="@mipmap/xingqiyi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+
+                    <LinearLayout
+                        android:background="@drawable/linearback"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="300dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:background="@drawable/linearback"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:paddingLeft="1dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@mipmap/xinpindaole"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:background="@drawable/linearback"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+                                    <ImageView
+                                        android:paddingBottom="1dp"
+                                        android:paddingRight="1dp"
+                                        android:paddingLeft="1dp"
+                                        android:src="@mipmap/pintuan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </ImageView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+                                    <ImageView
+                                        android:paddingLeft="1dp"
+                                        android:paddingRight="1dp"
+                                        android:src="@mipmap/xianshi"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </ImageView>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <LinearLayout
+
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+
+                                    android:paddingBottom="1dp"
+                                    android:paddingLeft="1dp"
+                                    android:src="@mipmap/xianding"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </ImageView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:background="@drawable/linearback"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+
+                                    android:paddingBottom="1dp"
+                                    android:src="@mipmap/daren"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </ImageView>
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:paddingBottom="1dp"
+
+                                    android:paddingRight="1dp"
+                                    android:src="@mipmap/faxianhao"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </ImageView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <TextView
+                            android:layout_marginLeft="8dp"
+                            android:layout_gravity="center"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:text="丨 新人专享"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+
+
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/xinren"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></ImageView>
+
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@mipmap/vip"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:background="@drawable/linearback"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="300dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:background="@drawable/linearback"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <RelativeLayout
+                                android:layout_weight="1.2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"
+                                    android:textSize="15sp"
+                                    android:textColor="#090909"
+                                    android:text="上装榜单"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                                <TextView
+                                    android:layout_marginTop="45dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="怎么搭都好看"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+
+                            </RelativeLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/weiyi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:text="卫衣"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/jiake"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:text="夹克"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/mianyi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:text="棉衣/羽绒"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:background="@drawable/linearback"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <RelativeLayout
+                                android:layout_weight="1.2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"
+                                    android:textSize="15sp"
+                                    android:textColor="#090909"
+                                    android:text="裤装榜单"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                                <TextView
+                                    android:layout_marginTop="45dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="秒变时尚潮人"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </RelativeLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/yundongku"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:text="运动裤"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/xiuxian"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:text="休闲裤"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/niuzai"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:text="牛仔裤"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:background="@drawable/linearback"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <RelativeLayout
+                                android:layout_weight="1.2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"
+                                    android:textSize="15sp"
+                                    android:textColor="#090909"
+                                    android:text="裤装榜单"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                                <TextView
+                                    android:layout_marginTop="45dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="秒变时尚潮人"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </RelativeLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/renqi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:text="人气"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/yundong"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:text="运动鞋"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/xuezi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:text="靴子"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                            <ImageView
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/huoyan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </ImageView>
+                            <TextView
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text=" Hot:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <Button
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="生活"
+                                android:background="@drawable/buttonsback"
+                                android:layout_width="55dp"
+                                android:layout_height="30dp">
+                            </Button>
+
+
+                            <Button
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="潮玩"
+                                android:background="@drawable/buttonsback"
+                                android:layout_width="55dp"
+                                android:layout_height="30dp">
+                            </Button>
+
+
+                            <Button
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="潮食"
+                                android:background="@drawable/buttonsback"
+                                android:layout_width="55dp"
+                                android:layout_height="30dp">
+                            </Button>
+
+                            <Button
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="潮童"
+                                android:background="@drawable/buttonsback"
+                                android:layout_width="55dp"
+                                android:layout_height="30dp">
+                            </Button>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <com.youth.banner.Banner
+                        android:layout_margin="10dp"
+                        android:id="@+id/man_low_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp">
+
+                    </com.youth.banner.Banner>
+                    <TextView
+                        android:gravity="center"
+                        android:text="UFO飞碟好物"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <ImageView
+                        android:src="@mipmap/d"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </ImageView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/man_low_staggview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+                    <TextView
+                        android:gravity="center"
+                        android:text="YO!社区"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/e"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="8dp"
+                        android:src="@mipmap/s5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/man_tab"
+                app:tabMode="scrollable"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </com.google.android.material.tabs.TabLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/s"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <com.jcodecraeer.xrecyclerview.XRecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/man_recyclerview"
+                        android:layout_height="match_parent">
+
+                    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+</LinearLayout>

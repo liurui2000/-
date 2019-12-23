@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".mvp.ui.activity.ShoppingCarActivity">
+
+    <RelativeLayout
+        android:id="@+id/rela_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#353535"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="购 物 车"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_icon"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_shopcar_goback"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/rela_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/iv_shopcar_money_buy"
+            android:id="@+id/iv_shopcar_goodslist_rcv"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:id="@+id/iv_shopcar_money_buy"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="全选"
+                android:checked="false"
+                android:button="@null"
+                android:drawableRight="@drawable/allselect"
+                android:textColor="#000"
+                android:paddingTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/iv_shopcar_allselect"
+                android:layout_gravity="center_vertical"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总价:￥"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="#DB525F"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:id="@+id/iv_shopcar_total"
+                        android:textColor="#DB525F"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="("
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="#DB525F"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:id="@+id/iv_shopcar_num"
+                        android:textColor="#DB525F"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=")件"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="#DB525F"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="不含运费"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/drawred"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:text="结算"
+                android:id="@+id/iv_shopcar_pay"
+                android:textSize="13sp"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
